@@ -29,9 +29,8 @@
       "plugin": "upload",
       "required": false
     },
-    "author": {
-      "type": "string",
-      "required": true
+    "authors": {
+      "collection": "members"
     }
   }
 }

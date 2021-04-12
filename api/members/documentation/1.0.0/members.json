@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/projects": {
+    "/members": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the members's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve members document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Project"
+                    "$ref": "#/components/schemas/Members"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new members record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve members document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Members"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewMembers"
               }
             }
           }
         }
       }
     },
-    "/projects/count": {
+    "/members/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of members documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve members document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "parameters": []
       }
     },
-    "/projects/{id}": {
+    "/members/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one members record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve members document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Members"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single members record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve members document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Members"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewMembers"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single members record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single members based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Members"
         ],
         "parameters": [
           {
@@ -514,123 +514,51 @@
   },
   "components": {
     "schemas": {
-      "Project": {
+      "Members": {
         "required": [
           "id",
-          "ongoing"
+          "alumni",
+          "position"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "ongoing": {
+          "name": {
+            "type": "string"
+          },
+          "alumni": {
             "type": "boolean",
             "default": false
           },
-          "title": {
-            "type": "string"
+          "passoutYr": {
+            "type": "integer"
           },
-          "description": {
-            "type": "string"
-          },
-          "sig": {
-            "required": [
-              "id",
-              "name",
-              "description",
-              "no_link",
-              "logo"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "no_link": {
-                "type": "boolean"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "authors": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "alumni",
-                "position"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alumni": {
-                  "type": "boolean"
-                },
-                "passoutYr": {
-                  "type": "integer"
-                },
-                "position": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "published_at": {
+          "position": {
             "type": "string",
-            "format": "date-time"
+            "default": "Executive Member"
           }
         }
       },
-      "NewProject": {
+      "NewMembers": {
         "required": [
-          "ongoing"
+          "alumni",
+          "position"
         ],
         "properties": {
-          "ongoing": {
+          "name": {
+            "type": "string"
+          },
+          "alumni": {
             "type": "boolean",
             "default": false
           },
-          "title": {
-            "type": "string"
+          "passoutYr": {
+            "type": "integer"
           },
-          "description": {
-            "type": "string"
-          },
-          "sig": {
-            "type": "string"
-          },
-          "authors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "published_at": {
+          "position": {
             "type": "string",
-            "format": "date-time"
+            "default": "Executive Member"
           },
           "created_by": {
             "type": "string"
@@ -644,7 +572,7 @@
   },
   "tags": [
     {
-      "name": "Project"
+      "name": "Members"
     }
   ]
 }

@@ -566,6 +566,39 @@
               }
             }
           },
+          "members": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "alumni",
+                "position"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alumni": {
+                  "type": "boolean"
+                },
+                "passoutYr": {
+                  "type": "integer"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -590,6 +623,12 @@
           },
           "SIG": {
             "type": "string"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

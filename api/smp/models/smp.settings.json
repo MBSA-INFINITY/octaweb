@@ -26,6 +26,9 @@
     },
     "SIG": {
       "model": "sig"
+    },
+    "members": {
+      "collection": "members"
     }
   }
 }

@@ -14,8 +14,8 @@
     "title": {
       "type": "string"
     },
-    "sigs": {
-      "collection": "sig"
+    "description": {
+      "type": "richtext"
     }
   }
 }

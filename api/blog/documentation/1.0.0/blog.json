@@ -517,8 +517,7 @@
       "Blog": {
         "required": [
           "id",
-          "title",
-          "author"
+          "title"
         ],
         "properties": {
           "id": {
@@ -597,8 +596,38 @@
               }
             }
           },
-          "author": {
-            "type": "string"
+          "authors": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "alumni",
+                "position"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alumni": {
+                  "type": "boolean"
+                },
+                "passoutYr": {
+                  "type": "integer"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -608,8 +637,7 @@
       },
       "NewBlog": {
         "required": [
-          "title",
-          "author"
+          "title"
         ],
         "properties": {
           "title": {
@@ -618,8 +646,11 @@
           "content": {
             "type": "string"
           },
-          "author": {
-            "type": "string"
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

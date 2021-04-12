@@ -24,6 +24,9 @@
     },
     "sig": {
       "model": "sig"
+    },
+    "authors": {
+      "collection": "members"
     }
   }
 }
