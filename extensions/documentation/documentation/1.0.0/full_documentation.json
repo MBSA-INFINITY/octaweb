@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/12/2021 1:36:59 PM"
+    "x-generation-date": "04/12/2021 2:50:30 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5583,6 +5583,41 @@
           "title": {
             "type": "string"
           },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description",
+                "no_link",
+                "logo"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "no_link": {
+                  "type": "boolean"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5593,6 +5628,12 @@
         "properties": {
           "title": {
             "type": "string"
+          },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -5609,8 +5650,7 @@
       "Project": {
         "required": [
           "id",
-          "ongoing",
-          "sig"
+          "ongoing"
         ],
         "properties": {
           "id": {
@@ -5620,19 +5660,43 @@
             "type": "boolean",
             "default": false
           },
-          "sig": {
-            "type": "string",
-            "enum": [
-              "Cipher",
-              "Rovisp",
-              "Torsion"
-            ]
-          },
           "title": {
             "type": "string"
           },
           "description": {
             "type": "string"
+          },
+          "sig": {
+            "required": [
+              "id",
+              "name",
+              "description",
+              "no_link",
+              "logo"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "no_link": {
+                "type": "boolean"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -5642,26 +5706,20 @@
       },
       "NewProject": {
         "required": [
-          "ongoing",
-          "sig"
+          "ongoing"
         ],
         "properties": {
           "ongoing": {
             "type": "boolean",
             "default": false
           },
-          "sig": {
-            "type": "string",
-            "enum": [
-              "Cipher",
-              "Rovisp",
-              "Torsion"
-            ]
-          },
           "title": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "sig": {
             "type": "string"
           },
           "published_at": {
@@ -5719,7 +5777,8 @@
           "id",
           "name",
           "description",
-          "no_link"
+          "no_link",
+          "logo"
         ],
         "properties": {
           "id": {
@@ -5734,6 +5793,73 @@
           "no_link": {
             "type": "boolean",
             "default": false
+          },
+          "logo": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -5782,6 +5908,38 @@
           "url": {
             "type": "string"
           },
+          "SIG": {
+            "required": [
+              "id",
+              "name",
+              "description",
+              "no_link",
+              "logo"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "no_link": {
+                "type": "boolean"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5802,6 +5960,9 @@
             "type": "string"
           },
           "url": {
+            "type": "string"
+          },
+          "SIG": {
             "type": "string"
           },
           "published_at": {

@@ -534,6 +534,38 @@
           "url": {
             "type": "string"
           },
+          "SIG": {
+            "required": [
+              "id",
+              "name",
+              "description",
+              "no_link",
+              "logo"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "no_link": {
+                "type": "boolean"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -554,6 +586,9 @@
             "type": "string"
           },
           "url": {
+            "type": "string"
+          },
+          "SIG": {
             "type": "string"
           },
           "published_at": {

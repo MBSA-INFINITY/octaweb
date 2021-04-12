@@ -525,6 +525,41 @@
           "title": {
             "type": "string"
           },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description",
+                "no_link",
+                "logo"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "no_link": {
+                  "type": "boolean"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -535,6 +570,12 @@
         "properties": {
           "title": {
             "type": "string"
+          },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

@@ -16,20 +16,14 @@
       "default": false,
       "required": true
     },
-    "sig": {
-      "type": "enumeration",
-      "enum": [
-        "Cipher",
-        "Rovisp",
-        "Torsion"
-      ],
-      "required": true
-    },
     "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
+    },
+    "sig": {
+      "model": "sig"
     }
   }
 }

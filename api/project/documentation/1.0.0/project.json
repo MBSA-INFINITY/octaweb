@@ -517,8 +517,7 @@
       "Project": {
         "required": [
           "id",
-          "ongoing",
-          "sig"
+          "ongoing"
         ],
         "properties": {
           "id": {
@@ -528,19 +527,43 @@
             "type": "boolean",
             "default": false
           },
-          "sig": {
-            "type": "string",
-            "enum": [
-              "Cipher",
-              "Rovisp",
-              "Torsion"
-            ]
-          },
           "title": {
             "type": "string"
           },
           "description": {
             "type": "string"
+          },
+          "sig": {
+            "required": [
+              "id",
+              "name",
+              "description",
+              "no_link",
+              "logo"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "no_link": {
+                "type": "boolean"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -550,26 +573,20 @@
       },
       "NewProject": {
         "required": [
-          "ongoing",
-          "sig"
+          "ongoing"
         ],
         "properties": {
           "ongoing": {
             "type": "boolean",
             "default": false
           },
-          "sig": {
-            "type": "string",
-            "enum": [
-              "Cipher",
-              "Rovisp",
-              "Torsion"
-            ]
-          },
           "title": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "sig": {
             "type": "string"
           },
           "published_at": {
