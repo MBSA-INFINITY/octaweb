@@ -517,13 +517,21 @@
       "Smp": {
         "required": [
           "id",
-          "title"
+          "title",
+          "description",
+          "url"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "published_at": {
@@ -534,10 +542,18 @@
       },
       "NewSmp": {
         "required": [
-          "title"
+          "title",
+          "description",
+          "url"
         ],
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "published_at": {

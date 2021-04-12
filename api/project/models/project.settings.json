@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ongoing": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "sig": {
+      "type": "enumeration",
+      "enum": [
+        "Cipher",
+        "Rovisp",
+        "Torsion"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

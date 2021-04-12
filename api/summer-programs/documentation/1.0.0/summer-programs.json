@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/recruitment-faq": {
+    "/summer-programs": {
       "get": {
         "deprecated": false,
-        "description": "Find all the recruitment-faq's records",
+        "description": "Find all the summer-programs's records",
         "responses": {
           "200": {
-            "description": "Retrieve recruitment-faq document(s)",
+            "description": "Retrieve summer-programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Recruitment-faq"
+          "Summer-programs"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single recruitment-faq record",
+        "description": "Update a single summer-programs record",
         "responses": {
           "200": {
-            "description": "Retrieve recruitment-faq document(s)",
+            "description": "Retrieve summer-programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Recruitment-faq"
+          "Summer-programs"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRecruitment-faq"
+                "$ref": "#/components/schemas/NewSummer-programs"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single recruitment-faq record",
+        "description": "Delete a single summer-programs record",
         "responses": {
           "200": {
-            "description": "deletes a single recruitment-faq based on the ID supplied",
+            "description": "deletes a single summer-programs based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Recruitment-faq"
+          "Summer-programs"
         ],
         "parameters": []
       }
@@ -315,35 +315,37 @@
   },
   "components": {
     "schemas": {
-      "Recruitment-faq": {
+      "Summer-programs": {
         "required": [
           "id",
-          "FAQ",
-          "form_url"
+          "open",
+          "year"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "FAQ": {
-            "type": "string"
+          "open": {
+            "type": "boolean",
+            "default": false
           },
-          "form_url": {
-            "type": "string"
+          "year": {
+            "type": "integer"
           }
         }
       },
-      "NewRecruitment-faq": {
+      "NewSummer-programs": {
         "required": [
-          "FAQ",
-          "form_url"
+          "open",
+          "year"
         ],
         "properties": {
-          "FAQ": {
-            "type": "string"
+          "open": {
+            "type": "boolean",
+            "default": false
           },
-          "form_url": {
-            "type": "string"
+          "year": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

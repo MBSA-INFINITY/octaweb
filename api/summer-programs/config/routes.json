@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/summer-programs",
+      "handler": "summer-programs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/summer-programs",
+      "handler": "summer-programs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/summer-programs",
+      "handler": "summer-programs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "summer_programs",
+  "info": {
+    "name": "Summer Programs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "open": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "max": 2050,
+      "min": 2020,
+      "required": true
+    }
+  }
+}
