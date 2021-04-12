@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "recruitment_faqs",
+  "info": {
+    "name": "Recruitment FAQ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Answer": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

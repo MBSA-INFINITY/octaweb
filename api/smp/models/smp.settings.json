@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smps",
+  "info": {
+    "name": "SMP"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
