@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "members",
   "info": {
-    "name": "Members"
+    "name": "Members",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,8 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "alumni": {
       "type": "boolean",
@@ -25,6 +27,16 @@
       "type": "string",
       "default": "Executive Member",
       "required": true
+    },
+    "roll": {
+      "type": "uid",
+      "required": true,
+      "private": true
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.social"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_reports",
+  "info": {
+    "name": "Project Reports",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "project": {
+      "model": "project",
+      "via": "project_reports"
+    },
+    "authors": {
+      "collection": "members"
+    },
+    "header": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

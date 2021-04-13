@@ -518,7 +518,8 @@
         "required": [
           "id",
           "alumni",
-          "position"
+          "position",
+          "roll"
         ],
         "properties": {
           "id": {
@@ -537,13 +538,40 @@
           "position": {
             "type": "string",
             "default": "Executive Member"
+          },
+          "contacts": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "github": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              }
+            }
           }
         }
       },
       "NewMembers": {
         "required": [
           "alumni",
-          "position"
+          "position",
+          "roll"
         ],
         "properties": {
           "name": {
@@ -559,6 +587,35 @@
           "position": {
             "type": "string",
             "default": "Executive Member"
+          },
+          "roll": {
+            "type": "uid"
+          },
+          "contacts": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "github": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              }
+            }
           },
           "created_by": {
             "type": "string"

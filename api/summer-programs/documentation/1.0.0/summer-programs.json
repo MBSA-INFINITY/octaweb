@@ -318,8 +318,7 @@
       "Summer-programs": {
         "required": [
           "id",
-          "open",
-          "year"
+          "open"
         ],
         "properties": {
           "id": {
@@ -329,23 +328,22 @@
             "type": "boolean",
             "default": false
           },
-          "year": {
-            "type": "integer"
+          "description": {
+            "type": "string"
           }
         }
       },
       "NewSummer-programs": {
         "required": [
-          "open",
-          "year"
+          "open"
         ],
         "properties": {
           "open": {
             "type": "boolean",
             "default": false
           },
-          "year": {
-            "type": "integer"
+          "description": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

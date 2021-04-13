@@ -27,6 +27,10 @@
     },
     "authors": {
       "collection": "members"
+    },
+    "project_reports": {
+      "via": "project",
+      "collection": "project-reports"
     }
   }
 }

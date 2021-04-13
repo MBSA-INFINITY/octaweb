@@ -319,7 +319,8 @@
         "required": [
           "id",
           "FAQ",
-          "form_url"
+          "form_url",
+          "open"
         ],
         "properties": {
           "id": {
@@ -330,13 +331,18 @@
           },
           "form_url": {
             "type": "string"
+          },
+          "open": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
       "NewRecruitment-faq": {
         "required": [
           "FAQ",
-          "form_url"
+          "form_url",
+          "open"
         ],
         "properties": {
           "FAQ": {
@@ -344,6 +350,10 @@
           },
           "form_url": {
             "type": "string"
+          },
+          "open": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

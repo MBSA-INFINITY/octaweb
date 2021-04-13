@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "summer_programs",
+  "collectionName": "expos",
   "info": {
-    "name": "Summer Programs",
+    "name": "Expo",
     "description": ""
   },
   "options": {
@@ -11,13 +11,13 @@
     "draftAndPublish": false
   },
   "attributes": {
+    "description": {
+      "type": "text"
+    },
     "open": {
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "description": {
-      "type": "text"
     }
   }
 }

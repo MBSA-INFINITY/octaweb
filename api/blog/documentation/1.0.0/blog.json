@@ -602,7 +602,8 @@
               "required": [
                 "id",
                 "alumni",
-                "position"
+                "position",
+                "roll"
               ],
               "properties": {
                 "id": {
@@ -619,6 +620,12 @@
                 },
                 "position": {
                   "type": "string"
+                },
+                "roll": {
+                  "type": "uid"
+                },
+                "contacts": {
+                  "type": "component"
                 },
                 "created_by": {
                   "type": "string"

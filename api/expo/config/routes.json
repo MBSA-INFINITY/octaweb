@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/expo",
+      "handler": "expo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/expo",
+      "handler": "expo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/expo",
+      "handler": "expo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
