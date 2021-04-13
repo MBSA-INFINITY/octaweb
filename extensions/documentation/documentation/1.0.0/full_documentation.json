@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/13/2021 2:38:01 PM"
+    "x-generation-date": "04/13/2021 6:34:26 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7521,8 +7521,7 @@
         "required": [
           "id",
           "FAQ",
-          "form_url",
-          "open"
+          "form_url"
         ],
         "properties": {
           "id": {
@@ -7536,15 +7535,14 @@
           },
           "open": {
             "type": "boolean",
-            "default": false
+            "default": true
           }
         }
       },
       "NewRecruitment-faq": {
         "required": [
           "FAQ",
-          "form_url",
-          "open"
+          "form_url"
         ],
         "properties": {
           "FAQ": {
@@ -7555,7 +7553,7 @@
           },
           "open": {
             "type": "boolean",
-            "default": false
+            "default": true
           },
           "created_by": {
             "type": "string"

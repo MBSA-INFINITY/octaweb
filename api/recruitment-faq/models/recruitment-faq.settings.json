@@ -22,8 +22,8 @@
     },
     "open": {
       "type": "boolean",
-      "default": false,
-      "required": true
+      "default": true,
+      "required": false
     }
   }
 }
