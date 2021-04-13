@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/13/2021 6:34:26 PM"
+    "x-generation-date": "04/13/2021 7:44:02 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6968,6 +6968,10 @@
           "description": {
             "type": "string"
           },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6985,6 +6989,10 @@
           },
           "description": {
             "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
@@ -7155,50 +7163,6 @@
           "id": {
             "type": "string"
           },
-          "project": {
-            "required": [
-              "id",
-              "ongoing"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "ongoing": {
-                "type": "boolean"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "sig": {
-                "type": "string"
-              },
-              "authors": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "project_reports": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "authors": {
             "type": "array",
             "items": {
@@ -7309,6 +7273,50 @@
           "body": {
             "type": "string"
           },
+          "project": {
+            "required": [
+              "id",
+              "ongoing"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "ongoing": {
+                "type": "boolean"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "sig": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "project_reports": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7317,9 +7325,6 @@
       },
       "NewProject-reports": {
         "properties": {
-          "project": {
-            "type": "string"
-          },
           "authors": {
             "type": "array",
             "items": {
@@ -7327,6 +7332,9 @@
             }
           },
           "body": {
+            "type": "string"
+          },
+          "project": {
             "type": "string"
           },
           "published_at": {
@@ -7442,9 +7450,6 @@
                 "id": {
                   "type": "string"
                 },
-                "project": {
-                  "type": "string"
-                },
                 "authors": {
                   "type": "array",
                   "items": {
@@ -7455,6 +7460,9 @@
                   "type": "string"
                 },
                 "body": {
+                  "type": "string"
+                },
+                "project": {
                   "type": "string"
                 },
                 "published_at": {

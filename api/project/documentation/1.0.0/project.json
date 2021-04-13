@@ -615,9 +615,6 @@
                 "id": {
                   "type": "string"
                 },
-                "project": {
-                  "type": "string"
-                },
                 "authors": {
                   "type": "array",
                   "items": {
@@ -628,6 +625,9 @@
                   "type": "string"
                 },
                 "body": {
+                  "type": "string"
+                },
+                "project": {
                   "type": "string"
                 },
                 "published_at": {

@@ -530,6 +530,10 @@
           "description": {
             "type": "string"
           },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -547,6 +551,10 @@
           },
           "description": {
             "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",

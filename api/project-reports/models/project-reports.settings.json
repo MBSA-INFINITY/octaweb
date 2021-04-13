@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "project": {
-      "model": "project",
-      "via": "project_reports"
-    },
     "authors": {
       "collection": "members"
     },
@@ -29,6 +25,10 @@
     },
     "body": {
       "type": "richtext"
+    },
+    "project": {
+      "model": "project",
+      "via": "project_reports"
     }
   }
 }
