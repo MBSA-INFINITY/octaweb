@@ -37,6 +37,9 @@
       "type": "component",
       "repeatable": false,
       "component": "members.social"
+    },
+    "sigs": {
+      "collection": "sig"
     }
   }
 }

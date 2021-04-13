@@ -1,13 +1,5 @@
 module.exports = ({ env }) => {
-  const plugins = {
-    "github-publish": {
-      owner: "IET-NITK", // The gothub organisation or user
-      repo: "IET-NITK.github.io", // The name of the repository
-      workflow_id: "deploy.yml", // The workflow_id or filename
-      token: env("GITHUB_TOKEN"), // The GitHub personal access token with access to trigger workflows and view build status
-      branch: "daddy", // The branch the workflow should be triggered on
-    },
-  };
+  const plugins = {};
   if (env("NODE_ENV") === "production") {
     plugins["upload"]={
       provider: "cloudinary",
@@ -17,6 +9,13 @@ module.exports = ({ env }) => {
         api_secret: env("CLOUDINARY_SECRET"),
       },
     }
+    // plugins["github-publish"]= {
+    //   owner: "IET-NITK", // The gothub organisation or user
+    //   repo: "IET-NITK.github.io", // The name of the repository
+    //   workflow_id: "7048366", // The workflow_id or filename
+    //   token: env("GITHUB_TOKEN"), // The GitHub personal access token with access to trigger workflows and view build status
+    //   branch: "daddy", // The branch the workflow should be triggered on
+    // }
   }
   return plugins
 };

@@ -596,6 +596,12 @@
                 "contacts": {
                   "type": "component"
                 },
+                "sigs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/13/2021 7:44:02 PM"
+    "x-generation-date": "04/13/2021 9:41:26 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6908,6 +6908,12 @@
                 "contacts": {
                   "type": "component"
                 },
+                "sigs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -7094,6 +7100,41 @@
                 "type": "integer"
               }
             }
+          },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description",
+                "no_link",
+                "logo"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "no_link": {
+                  "type": "boolean"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -7147,6 +7188,12 @@
               }
             }
           },
+          "sigs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "created_by": {
             "type": "string"
           },
@@ -7193,6 +7240,12 @@
                 },
                 "contacts": {
                   "type": "component"
+                },
+                "sigs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
@@ -7430,6 +7483,12 @@
                 },
                 "contacts": {
                   "type": "component"
+                },
+                "sigs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
@@ -7769,6 +7828,12 @@
                 },
                 "contacts": {
                   "type": "component"
+                },
+                "sigs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
