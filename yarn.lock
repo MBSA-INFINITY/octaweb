@@ -8198,9 +8198,9 @@ pg-types@^2.1.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@^8.5.1:
+pg@8.5.1:
   version "8.5.1"
-  resolved "https://registry.npmjs.org/pg/-/pg-8.5.1.tgz"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-8.5.1.tgz#34dcb15f6db4a29c702bf5031ef2e1e25a06a120"
   integrity sha512-9wm3yX9lCfjvA98ybCyw2pADUivyNWT/yIP4ZcDVpMN0og70BUWYEGXPCTAQdGTAqnytfRADb7NERrY1qxhIqw==
   dependencies:
     buffer-writer "2.0.0"
@@ -9473,9 +9473,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollbar@^2.21.1:
+rollbar@2.21.1:
   version "2.21.1"
-  resolved "https://registry.npmjs.org/rollbar/-/rollbar-2.21.1.tgz"
+  resolved "https://registry.yarnpkg.com/rollbar/-/rollbar-2.21.1.tgz#482c3b2ea0d65e774352da3e89eeaf4679ee9970"
   integrity sha512-HROzV6rV0BYxzZpOlDKUSV/RdyHMuCm9gknIGk+FYPVAUwbXCrwZeiYwuc5n3MLnX+IPBVzatzJsiNOJzngNGg==
   dependencies:
     async "~1.2.1"
@@ -10367,7 +10367,7 @@ strapi-helper-plugin@3.5.4:
     styled-components "^5.2.1"
     whatwg-fetch "^3.6.2"
 
-strapi-plugin-comments@^1.0.1-beta.7:
+strapi-plugin-comments@1.0.1-beta.7:
   version "1.0.1-beta.7"
   resolved "https://registry.yarnpkg.com/strapi-plugin-comments/-/strapi-plugin-comments-1.0.1-beta.7.tgz#881f73c297dc88d13bc98da79334ce880fcd8399"
   integrity sha512-0hWnKRTZTtGVhMLJ3VhYXtsRXETHxe5lLOPwXwSWgET2EyCxL88ZfUkiOWwtq3zjAeFjFKgifF+9TrLL0pHqGw==
@@ -10505,7 +10505,7 @@ strapi-plugin-email@3.5.4:
     strapi-provider-email-sendmail "3.5.4"
     strapi-utils "3.5.4"
 
-strapi-plugin-github-publish@^0.0.5:
+strapi-plugin-github-publish@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/strapi-plugin-github-publish/-/strapi-plugin-github-publish-0.0.5.tgz#4535d0c24c4764a1fe19f3c37d6adc6d272a99d3"
   integrity sha512-XQcbcxyEQqWPgXWFHuhgylkj6C0XTkxHDU9x+xCkqqI5+Ps9pVJBpoc83Y1OWhQJobfdy5hBEu5/9/mRtECKIg==
@@ -10608,9 +10608,9 @@ strapi-provider-email-sendmail@3.5.4:
     sendmail "^1.6.1"
     strapi-utils "3.5.4"
 
-strapi-provider-upload-cloudinary@^3.5.4:
+strapi-provider-upload-cloudinary@3.5.4:
   version "3.5.4"
-  resolved "https://registry.npmjs.org/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.5.4.tgz"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.5.4.tgz#63f29ffd0fb9a7cec9e16f657e7d21e0d012a724"
   integrity sha512-yRBj8P4O2zc7r3bYzzsoRmhvKTfP5NhThXk6vs+Bd2LUNhk/1FeaZ55ghdP/F4+5ZChXXL6gsxOT5DgrOR68GQ==
   dependencies:
     cloudinary "^1.25.0"
