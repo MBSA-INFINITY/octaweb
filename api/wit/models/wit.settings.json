@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "wits",
+  "info": {
+    "name": "WIT"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "About": {
+      "type": "text"
+    }
+  }
+}

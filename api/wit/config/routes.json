@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wit",
+      "handler": "wit.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wit",
+      "handler": "wit.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wit",
+      "handler": "wit.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
