@@ -10560,11 +10560,6 @@
     "strapi-provider-email-sendmail" "3.5.4"
     "strapi-utils" "3.5.4"
 
-"strapi-plugin-github-publish@0.0.5":
-  "integrity" "sha512-XQcbcxyEQqWPgXWFHuhgylkj6C0XTkxHDU9x+xCkqqI5+Ps9pVJBpoc83Y1OWhQJobfdy5hBEu5/9/mRtECKIg=="
-  "resolved" "https://registry.npmjs.org/strapi-plugin-github-publish/-/strapi-plugin-github-publish-0.0.5.tgz"
-  "version" "0.0.5"
-
 "strapi-plugin-graphql@3.5.4":
   "integrity" "sha512-2hwwFK3f1t8Fo1MkQHLBlIG6zH+mAu1CfNYB2jlwFkwzOVxWAXcvDuG+RGfS0cfMq7vwTCWGHpysiJk1OUlN5g=="
   "resolved" "https://registry.npmjs.org/strapi-plugin-graphql/-/strapi-plugin-graphql-3.5.4.tgz"
