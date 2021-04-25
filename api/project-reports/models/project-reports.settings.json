@@ -27,8 +27,8 @@
       "type": "richtext"
     },
     "project": {
-      "model": "project",
-      "via": "project_reports"
+      "via": "project_reports",
+      "model": "project"
     }
   }
 }

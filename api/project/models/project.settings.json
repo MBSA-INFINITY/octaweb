@@ -29,8 +29,11 @@
       "collection": "members"
     },
     "project_reports": {
-      "via": "project",
-      "collection": "project-reports"
+      "collection": "project-reports",
+      "via": "project"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
