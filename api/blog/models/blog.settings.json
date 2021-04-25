@@ -31,6 +31,16 @@
     },
     "authors": {
       "collection": "members"
+    },
+    "displayOnBlog": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "default": "2021-04-01T06:30:00.000Z"
     }
   }
 }
