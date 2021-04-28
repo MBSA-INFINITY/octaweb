@@ -41,6 +41,17 @@
       "type": "date",
       "required": true,
       "default": "2021-04-01T06:30:00.000Z"
+    },
+    "route": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 15
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "minLength": 20,
+      "maxLength": 100
     }
   }
 }

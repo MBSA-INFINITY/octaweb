@@ -21,6 +21,11 @@
     },
     "date": {
       "type": "date"
+    },
+    "route": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 15
     }
   }
 }
