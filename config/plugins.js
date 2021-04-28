@@ -9,6 +9,22 @@ module.exports = ({ env }) => {
         api_secret: env("CLOUDINARY_SECRET"),
       },
     }
+    plugins["email"]={
+      provider: 'sendinblue',
+      providerOptions: {
+        host: "smtp-relay.sendinblue.com",
+        port: 587,
+        auth: {
+          user: env('EMAIL_SMTP_USER'),
+          pass: env('EMAIL_SMTP_PASS'),
+        },
+      },
+      settings: {
+        
+        defaultFrom: "no-reply@cms.iet.nitk.edu.in",
+        defaultReplyTo: "iet@nitk.edu.in",
+      },
+    }
     // plugins["github-publish"]= {
     //   owner: "IET-NITK", // The gothub organisation or user
     //   repo: "IET-NITK.github.io", // The name of the repository
