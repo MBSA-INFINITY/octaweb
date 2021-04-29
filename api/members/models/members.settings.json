@@ -49,6 +49,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "Internship": {
+      "type": "string",
+      "private": true
+    },
+    "Placements": {
+      "type": "string",
+      "private": true
     }
   }
 }

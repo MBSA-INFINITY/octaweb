@@ -22,6 +22,10 @@
     "phone": {
       "type": "biginteger",
       "private": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true
     }
   }
 }
