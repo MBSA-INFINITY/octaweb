@@ -41,22 +41,22 @@
     "sigs": {
       "collection": "sig"
     },
+    "internship": {
+      "type": "string",
+      "private": true
+    },
+    "placements": {
+      "type": "string",
+      "private": true
+    },
+    "rank": {
+      "type": "integer",
+      "default": 1000
+    },
     "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "Internship": {
       "type": "string",
-      "private": true
-    },
-    "Placements": {
-      "type": "string",
-      "private": true
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+      "unique": true
     }
   }
 }
