@@ -27,8 +27,17 @@
       "type": "richtext"
     },
     "project": {
-      "via": "project_reports",
-      "model": "project"
+      "model": "project",
+      "via": "project_reports"
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "minLength": 15
+    },
+    "route": {
+      "type": "uid",
+      "required": true
     }
   }
 }

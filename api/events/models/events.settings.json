@@ -26,6 +26,11 @@
       "type": "uid",
       "required": true,
       "maxLength": 15
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "minLength": 15
     }
   }
 }
