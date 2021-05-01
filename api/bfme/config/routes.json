@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bfme",
+      "handler": "bfme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bfme",
+      "handler": "bfme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bfme",
+      "handler": "bfme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

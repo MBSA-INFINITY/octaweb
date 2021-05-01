@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "bfmes",
+  "info": {
+    "name": "BFME",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "Default Description"
+    },
+    "body": {
+      "type": "richtext",
+      "default": "Nothing Here",
+      "required": true
+    }
+  }
+}
