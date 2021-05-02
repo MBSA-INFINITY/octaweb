@@ -29,6 +29,11 @@
     },
     "members": {
       "collection": "members"
+    },
+    "year": {
+      "type": "integer",
+      "required": true,
+      "default": 2021
     }
   }
 }
