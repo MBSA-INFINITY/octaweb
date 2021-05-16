@@ -518,7 +518,9 @@
         "required": [
           "id",
           "title",
-          "description"
+          "description",
+          "route",
+          "excerpt"
         ],
         "properties": {
           "id": {
@@ -534,6 +536,14 @@
             "type": "string",
             "format": "date"
           },
+          "route": {
+            "type": "uid",
+            "maxLength": 15
+          },
+          "excerpt": {
+            "type": "string",
+            "minLength": 15
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -543,7 +553,9 @@
       "NewEvents": {
         "required": [
           "title",
-          "description"
+          "description",
+          "route",
+          "excerpt"
         ],
         "properties": {
           "title": {
@@ -555,6 +567,14 @@
           "date": {
             "type": "string",
             "format": "date"
+          },
+          "route": {
+            "type": "uid",
+            "maxLength": 15
+          },
+          "excerpt": {
+            "type": "string",
+            "minLength": 15
           },
           "published_at": {
             "type": "string",

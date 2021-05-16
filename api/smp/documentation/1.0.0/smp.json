@@ -519,7 +519,8 @@
           "id",
           "title",
           "description",
-          "url"
+          "url",
+          "year"
         ],
         "properties": {
           "id": {
@@ -603,6 +604,18 @@
                     "type": "string"
                   }
                 },
+                "internship": {
+                  "type": "string"
+                },
+                "placements": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer"
+                },
+                "image": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -611,6 +624,10 @@
                 }
               }
             }
+          },
+          "year": {
+            "type": "integer",
+            "default": 2021
           },
           "published_at": {
             "type": "string",
@@ -622,7 +639,8 @@
         "required": [
           "title",
           "description",
-          "url"
+          "url",
+          "year"
         ],
         "properties": {
           "title": {
@@ -642,6 +660,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "year": {
+            "type": "integer",
+            "default": 2021
           },
           "published_at": {
             "type": "string",

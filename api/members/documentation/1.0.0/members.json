@@ -562,6 +562,9 @@
               },
               "phone": {
                 "type": "integer"
+              },
+              "email": {
+                "type": "string"
               }
             }
           },
@@ -599,6 +602,13 @@
                 }
               }
             }
+          },
+          "rank": {
+            "type": "integer",
+            "default": 1000
+          },
+          "image": {
+            "type": "string"
           }
         }
       },
@@ -649,6 +659,9 @@
               },
               "phone": {
                 "type": "integer"
+              },
+              "email": {
+                "type": "string"
               }
             }
           },
@@ -657,6 +670,19 @@
             "items": {
               "type": "string"
             }
+          },
+          "internship": {
+            "type": "string"
+          },
+          "placements": {
+            "type": "string"
+          },
+          "rank": {
+            "type": "integer",
+            "default": 1000
+          },
+          "image": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

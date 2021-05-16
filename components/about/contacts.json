@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_contacts",
+  "info": {
+    "name": "Contacts",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -330,6 +330,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "faq": {
+            "type": "string"
+          },
+          "form_url": {
+            "type": "string"
           }
         }
       },
@@ -343,6 +349,12 @@
             "default": false
           },
           "description": {
+            "type": "string"
+          },
+          "faq": {
+            "type": "string"
+          },
+          "form_url": {
             "type": "string"
           },
           "created_by": {

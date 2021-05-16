@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "mobile.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/metadata",
+      "handler": "mobile.tables",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
