@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/about-club": {
+    "/wit": {
       "get": {
         "deprecated": false,
-        "description": "Find all the about-club's records",
+        "description": "Find all the wit's records",
         "responses": {
           "200": {
-            "description": "Retrieve about-club document(s)",
+            "description": "Retrieve wit document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Wit"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Wit"
         ],
         "parameters": [
           {
@@ -195,18 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single about-club record",
+        "description": "Update a single wit record",
         "responses": {
           "200": {
-            "description": "Retrieve about-club document(s)",
+            "description": "Retrieve wit document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Wit"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Wit"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAbout-club"
+                "$ref": "#/components/schemas/NewWit"
               }
             }
           }
@@ -261,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single about-club record",
+        "description": "Delete a single wit record",
         "responses": {
           "200": {
-            "description": "deletes a single about-club based on the ID supplied",
+            "description": "deletes a single wit based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Wit"
         ],
         "parameters": []
       }
@@ -315,46 +310,22 @@
   },
   "components": {
     "schemas": {
-      "About-club": {
+      "Wit": {
         "required": [
-          "id",
-          "main",
-          "footer"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "main": {
-            "type": "string"
-          },
-          "about_us": {
-            "type": "string"
-          },
-          "footer": {
-            "type": "string"
-          },
-          "topnavbar_marquee": {
+          "About": {
             "type": "string"
           }
         }
       },
-      "NewAbout-club": {
-        "required": [
-          "main",
-          "footer"
-        ],
+      "NewWit": {
         "properties": {
-          "main": {
-            "type": "string"
-          },
-          "about_us": {
-            "type": "string"
-          },
-          "footer": {
-            "type": "string"
-          },
-          "topnavbar_marquee": {
+          "About": {
             "type": "string"
           },
           "created_by": {
@@ -367,5 +338,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Wit"
+    }
+  ]
 }

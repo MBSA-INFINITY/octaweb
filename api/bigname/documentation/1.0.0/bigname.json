@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/about-club": {
+    "/bigname": {
       "get": {
         "deprecated": false,
-        "description": "Find all the about-club's records",
+        "description": "Find all the bigname's records",
         "responses": {
           "200": {
-            "description": "Retrieve about-club document(s)",
+            "description": "Retrieve bigname document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bigname"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Bigname"
         ],
         "parameters": [
           {
@@ -195,18 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single about-club record",
+        "description": "Update a single bigname record",
         "responses": {
           "200": {
-            "description": "Retrieve about-club document(s)",
+            "description": "Retrieve bigname document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Bigname"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Bigname"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAbout-club"
+                "$ref": "#/components/schemas/NewBigname"
               }
             }
           }
@@ -261,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single about-club record",
+        "description": "Delete a single bigname record",
         "responses": {
           "200": {
-            "description": "deletes a single about-club based on the ID supplied",
+            "description": "deletes a single bigname based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "About-club"
+          "Bigname"
         ],
         "parameters": []
       }
@@ -315,47 +310,31 @@
   },
   "components": {
     "schemas": {
-      "About-club": {
+      "Bigname": {
         "required": [
-          "id",
-          "main",
-          "footer"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "main": {
+          "efd": {
             "type": "string"
           },
-          "about_us": {
-            "type": "string"
-          },
-          "footer": {
-            "type": "string"
-          },
-          "topnavbar_marquee": {
-            "type": "string"
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewAbout-club": {
-        "required": [
-          "main",
-          "footer"
-        ],
+      "NewBigname": {
         "properties": {
-          "main": {
+          "efd": {
             "type": "string"
           },
-          "about_us": {
-            "type": "string"
-          },
-          "footer": {
-            "type": "string"
-          },
-          "topnavbar_marquee": {
-            "type": "string"
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -367,5 +346,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Bigname"
+    }
+  ]
 }

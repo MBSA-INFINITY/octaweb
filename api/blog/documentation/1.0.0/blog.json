@@ -517,7 +517,11 @@
       "Blog": {
         "required": [
           "id",
-          "title"
+          "title",
+          "displayOnBlog",
+          "date",
+          "route",
+          "excerpt"
         ],
         "properties": {
           "id": {
@@ -633,6 +637,18 @@
                     "type": "string"
                   }
                 },
+                "internship": {
+                  "type": "string"
+                },
+                "placements": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer"
+                },
+                "image": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -642,6 +658,24 @@
               }
             }
           },
+          "displayOnBlog": {
+            "type": "boolean",
+            "default": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "default": "2021-04-01T06:30:00.000Z"
+          },
+          "route": {
+            "type": "uid",
+            "maxLength": 15
+          },
+          "excerpt": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 20
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -650,7 +684,11 @@
       },
       "NewBlog": {
         "required": [
-          "title"
+          "title",
+          "displayOnBlog",
+          "date",
+          "route",
+          "excerpt"
         ],
         "properties": {
           "title": {
@@ -664,6 +702,24 @@
             "items": {
               "type": "string"
             }
+          },
+          "displayOnBlog": {
+            "type": "boolean",
+            "default": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "default": "2021-04-01T06:30:00.000Z"
+          },
+          "route": {
+            "type": "uid",
+            "maxLength": 15
+          },
+          "excerpt": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 20
           },
           "published_at": {
             "type": "string",

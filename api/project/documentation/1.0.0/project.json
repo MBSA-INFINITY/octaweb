@@ -602,6 +602,18 @@
                     "type": "string"
                   }
                 },
+                "internship": {
+                  "type": "string"
+                },
+                "placements": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer"
+                },
+                "image": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -615,7 +627,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "excerpt",
+                "route"
               ],
               "properties": {
                 "id": {
@@ -636,6 +650,12 @@
                 "project": {
                   "type": "string"
                 },
+                "excerpt": {
+                  "type": "string"
+                },
+                "route": {
+                  "type": "uid"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -647,6 +667,9 @@
                 }
               }
             }
+          },
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -683,6 +706,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
