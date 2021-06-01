@@ -21,6 +21,7 @@ module.exports = {
       response=response.rows;
     }
     const finalInformation = {}
+
     response.map((e) =>
       {
         if(_.startsWith(e.key,"model_def_application::")){
