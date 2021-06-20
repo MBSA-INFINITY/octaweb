@@ -52,6 +52,13 @@
       "required": true,
       "minLength": 20,
       "maxLength": 100
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "WIT",
+        "Inkheart"
+      ]
     }
   }
 }
