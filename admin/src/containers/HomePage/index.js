@@ -27,29 +27,17 @@ import SocialLink from "./SocialLink";
 
 const SOCIAL_LINKS = [
   {
-    name: "GitHub",
-    link: "https://github.com/iet-nitk",
-  },
-  {
-    name: "MS Teams",
-    link: "https://slack.strapi.io/",
-  },
-  {
     name: "Facebook",
-    link: "https://medium.com/@strapi",
+    link: "https://facebook.com/ietnitk",
   },
   {
-    name: "Twitter",
-    link: "https://medium.com/@strapi",
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/ietnitk",
   },
-  {
-    name: "Instagram",
-    link: "https://twitter.com/strapijs",
-  },
-  {
-    name: "Telegram",
-    link: "https://www.reddit.com/r/Strapi/",
-  },
+  { href: "https://www.github.com/IET-NITK", name: "Github" },
+  { href: "https://t.me/IET_NITK", name: "Telegram" },
+  { href: "https://www.youtube.com/c/IETNITK", name: "Youtube" },
+  { href: "https://www.instagram.com/ietnitk", name: "Instagram" },
   {
     name: "Website",
     link: "https://iet.nitk.ac.in",
