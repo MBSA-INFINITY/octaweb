@@ -26,7 +26,7 @@ const colors = {
   greyAlpha: 'rgba(227, 233, 243, 0.5)',
   lightestBlue: '#e4f0fc',
   lightBlue: '#e6f0fb',
-  mediumBlue: '#007eff',
+  mediumBlue: '#803391',
   darkBlue: '#aed4fb',
   pale: '#f7f8f8',
   content: {

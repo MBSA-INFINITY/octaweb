@@ -8,6 +8,7 @@
     "start": "strapi start",
     "build": "echo $LICENSE> license.txt && strapi build",
     "build:dev": "strapi build",
+    "develop:admin": "strapi develop --watch-admin",
     "strapi": "strapi"
   },
   "dependencies": {

@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "induction.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
