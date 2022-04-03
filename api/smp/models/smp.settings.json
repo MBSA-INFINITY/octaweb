@@ -33,7 +33,8 @@
     "year": {
       "type": "integer",
       "required": true,
-      "default": 2021
+      "default": 2022,
+      "min": 2022
     }
   }
 }

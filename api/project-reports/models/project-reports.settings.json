@@ -26,10 +26,6 @@
     "body": {
       "type": "richtext"
     },
-    "project": {
-      "model": "project",
-      "via": "project_reports"
-    },
     "excerpt": {
       "type": "text",
       "required": true,

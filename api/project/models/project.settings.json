@@ -11,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "ongoing": {
+    "onDisplayForExpo": {
       "type": "boolean",
       "default": false,
       "required": true
@@ -28,9 +28,8 @@
     "authors": {
       "collection": "members"
     },
-    "project_reports": {
-      "via": "project",
-      "collection": "project-reports"
+    "project_report": {
+      "model": "project-reports"
     },
     "url": {
       "type": "string"
