@@ -29,8 +29,8 @@
     "url": "https://github.com/nirmalhk7/strapi-plugins-mobile.git"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": ">=6.0.0"
+    "node": "*",
+    "npm": "*"
   },
   "license": "MIT"
 }

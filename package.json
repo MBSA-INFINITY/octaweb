@@ -12,11 +12,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "knex": "0.21.18",
-    "pg": "8.5.1",
-    "pg-connection-string": "2.4.0",
-    "rollbar": "2.21.1",
-    "sqlite3": "5.0.0",
+    "knex": "*",
+    "pg": "*",
+    "pg-connection-string": "*",
+    "rollbar": "*",
+    "sqlite3": "*",
     "strapi": "*",
     "strapi-admin": "*",
     "strapi-connector-bookshelf": "*",
@@ -37,13 +37,13 @@
   },
   "strapi": {},
   "engines": {
-    "node": ">=10.16.0 <=17.x.x",
-    "npm": ">=6.0.0"
+    "node": "*",
+    "npm": "*"
   },
   "license": "MIT",
   "devDependencies": {
-    "jsdoc-to-markdown": "^7.1.1",
-    "lodash": "^4.17.21",
-    "pluralize": "^8.0.0"
+    "jsdoc-to-markdown": "*",
+    "lodash": "*",
+    "pluralize": "*"
   }
 }
